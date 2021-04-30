@@ -1,0 +1,16 @@
+html
+  head
+    title Visitantes recurrentes
+  body
+    a(href="./logout") Salir
+    br
+    table
+      thead
+        tr
+          th Nombre
+          th Email
+      tbody
+        each user in users
+          tr
+            td= user.name
+            td= user.email
